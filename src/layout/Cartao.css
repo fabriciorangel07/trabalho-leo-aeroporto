@@ -1,15 +1,43 @@
+
+html {
+    align-items: center;
+    text-decoration: none;
+}
+
+.menu ul {
+    padding: 10px 0 10px 0;
+    margin: 0 0 10px 0;
+    list-style: none;
+    text-align: center;
+    background-color: transparent;
+}
+
+.menu ul li a {
+    padding: 2px 10px;
+    display: inline-block;
+    color:  #EDEDED;
+    text-decoration: none;
+}
+
+.menu ul li { display: inline; }
+
+.menu ul li a:hover {
+    color: #6D6D6D;
+    border-bottom: 3px solid #d96760;
+}
+
 .Cartao {
-    border: 5px solid ;
+    border: 3px solid ;
     overflow: hidden;
-    margin: 5px;
+    margin: 3px 3px 5px 30px;
     display: flex;
     flex-direction: column;
-    max-width: 350px;
-    min-width: 300px;
+    max-width: 330px;
+    min-width: 330px;
 }
 
 .Cartao .Titulo {
-    padding: 10px;
+    padding: 5px;
     display: flex;
     justify-content: center;
     border-radius: 1px;
@@ -19,7 +47,7 @@
     flex-grow: 1;
     background-color: rgb(255, 254, 253);
     color: black;
-    padding: 20px;
+    text-align: center;
 }
 
 .formulario > .off-1 {
@@ -48,7 +76,7 @@ button,
     letter-spacing: 0.25em;
     text-decoration: none;
     border-radius: 0.35em;
-    margin: 2px 2px 2px 4em;
+    margin: 2px 2px 0 0em;
     border: 0;
     outline: 0;
     cursor: pointer;
@@ -156,4 +184,10 @@ button.style2,
     letter-spacing: 0.50em;
     margin: 30px 0 0 0;
     text-decoration: line-through;
+}
+
+.voo {
+    background-color: #a0a1a7;
+    width: 340px;
+    padding: 4px;
 }

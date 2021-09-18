@@ -3,19 +3,18 @@ import React from "react"
 const ribeirao = props => {
     return (
         <div>
-            <h2>Voo nº 001.888</h2>
+            <h2 class="voo">Voo nº 001.888</h2>
             <p>
                 <strong>Franca</strong> com destino a <strong>Ribeirão Preto</strong>
                 <br />
                 <br />
-                <br />
-                <strong>Saída</strong> as 09:30hrs
+                <strong>Saída</strong> as 20:10hrs
                 <div>
                 <p>Assentos Disponiveis:</p>
-                    <ul class="assentos">1 2 3 4 5</ul> 
                 </div>
                 <div>
                 <p>Assentos Ocupados:</p>
+                    <ul class="ocupados">1 2 3 4 5</ul> 
                     <ul class="ocupados">6 7 8 9 10</ul> 
                 </div>
                 <div class="formulario">

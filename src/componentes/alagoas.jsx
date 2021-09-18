@@ -2,19 +2,18 @@ export default function alagoas()
 {
     return (
         <div>
-            <h2>Voo nº 301.998</h2>
+            <h2 class="voo">Voo nº 301.998</h2>
             <p>
                 <strong>Franca</strong> com destino a <strong>Alagoas</strong>
                 <br />
                 <br />
-                <br />
-                <strong>Saída</strong> as 19:30hrs
+                <strong>Saída</strong> as 19:00hrs
                 <div>
                 <p>Assentos Disponiveis:</p>
-                    <ul class="assentos">1 2 3 4 5</ul> 
                 </div>
                 <div>
                 <p>Assentos Ocupados:</p>
+                    <ul class="ocupados">1 2 3 4 5</ul> 
                     <ul class="ocupados">6 7 8 9 10</ul> 
                 </div>
                 <div class="formulario">

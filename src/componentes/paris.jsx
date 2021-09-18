@@ -2,13 +2,12 @@ export default function paris()
 {
     return (
         <div>
-            <h2>Voo nº 888.999</h2>
+            <h2 class="voo">Voo nº 888.999</h2>
             <p>
                 <strong>Franca</strong> com destino a <strong>Paris</strong>
                 <br />
                 <br />
-                <br />
-                <strong>Saída</strong> as 19:30hrs
+                <strong>Saída</strong> as 17:45hrs
                 <div>
                 <p>Assentos Disponiveis:</p>
                     <ul class="assentos">1 2 3 4 5</ul> 

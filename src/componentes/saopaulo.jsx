@@ -2,10 +2,9 @@ export default function saopaulo()
 {
     return (
         <div>
-            <h2>Voo nº 341.002</h2>
+            <h2 class="voo">Voo nº 341.002</h2>
             <p>
                 <strong>Franca</strong> com destino a <strong>São Paulo</strong>
-                <br />
                 <br />
                 <br />
                 <strong>Saída</strong> as 19:30hrs
