@@ -1,6 +1,6 @@
 import React from "react"
 
-const Alea = props => {
+const ibiraci = props => {
     //let min = props.min
     //let max = props.max
     let { min, max } = props
@@ -22,4 +22,4 @@ const Alea = props => {
     )
 }
 
-export default Alea
+export default ibiraci
