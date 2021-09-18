@@ -1,4 +1,4 @@
-export default function saopaulo()
+export default function tokyo()
 {
     return (
         <div>
@@ -29,9 +29,3 @@ export default function saopaulo()
         </div>
     )
 }
-
-/*const Comp1 = _ => {
-    return 'Este texto pertence ao componente 1'
-}
-
-export default Comp1 */

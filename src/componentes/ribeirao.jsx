@@ -1,6 +1,6 @@
 import React from "react"
 
-const franca = props => {
+const ribeirao = props => {
     return (
         <div>
             <h2>Voo nº 001.888</h2>
@@ -31,4 +31,4 @@ const franca = props => {
     )
 }
 
-export default franca
+export default ribeirao

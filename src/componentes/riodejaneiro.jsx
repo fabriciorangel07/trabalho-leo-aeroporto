@@ -1,4 +1,4 @@
-export default function Parametro(props)
+export default function riodejaneiro(props)
 {
     return (
         <div>
