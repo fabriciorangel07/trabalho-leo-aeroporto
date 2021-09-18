@@ -4,7 +4,7 @@
     margin: 5px;
     display: flex;
     flex-direction: column;
-    max-width: 300px;
+    max-width: 350px;
     min-width: 300px;
 }
 
@@ -48,7 +48,7 @@ button,
     letter-spacing: 0.25em;
     text-decoration: none;
     border-radius: 0.35em;
-    margin: 2px;
+    margin: 2px 2px 2px 4em;
     border: 0;
     outline: 0;
     cursor: pointer;

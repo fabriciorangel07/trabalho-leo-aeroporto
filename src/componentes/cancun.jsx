@@ -1,15 +1,14 @@
-export default function Parametro(props)
+export default function saopaulo()
 {
     return (
         <div>
-            <h2>Voo nº 102.112</h2>
+            <h2>Voo nº 041.202</h2>
             <p>
-                <strong>Franca</strong> com destino ao <strong>Rio de Janeiro</strong>
+                <strong>Franca</strong> com destino a <strong>Cancun - MX</strong>
                 <br />
                 <br />
                 <br />
-                <strong>Saída</strong> as 09:30hr
-
+                <strong>Saída</strong> as 19:30hrs
                 <div>
                 <p>Assentos Disponiveis:</p>
                     <ul class="assentos">1 2 3 4 5</ul> 
@@ -30,3 +29,9 @@ export default function Parametro(props)
         </div>
     )
 }
+
+/*const Comp1 = _ => {
+    return 'Este texto pertence ao componente 1'
+}
+
+export default Comp1 */

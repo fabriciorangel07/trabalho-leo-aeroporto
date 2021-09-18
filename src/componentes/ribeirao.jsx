@@ -1,15 +1,15 @@
-export default function Parametro(props)
-{
+import React from "react"
+
+const franca = props => {
     return (
         <div>
-            <h2>Voo nº 102.112</h2>
+            <h2>Voo nº 001.888</h2>
             <p>
-                <strong>Franca</strong> com destino ao <strong>Rio de Janeiro</strong>
+                <strong>Franca</strong> com destino a <strong>Ribeirão Preto</strong>
                 <br />
                 <br />
                 <br />
-                <strong>Saída</strong> as 09:30hr
-
+                <strong>Saída</strong> as 09:30hrs
                 <div>
                 <p>Assentos Disponiveis:</p>
                     <ul class="assentos">1 2 3 4 5</ul> 
@@ -30,3 +30,5 @@ export default function Parametro(props)
         </div>
     )
 }
+
+export default franca
