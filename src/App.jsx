@@ -1,4 +1,4 @@
-import React from "react"
+import React, { useState, useEffect } from "react"
 import './App.css'
 import Cartao from "./layout/Cartao";
 import Componente1 from './componentes/saopaulo';
@@ -12,7 +12,17 @@ import Componente8 from './componentes/cancun';
 import Componente9 from './componentes/restinga';
 import Componente10 from './componentes/alagoas';
 
+
 const App = () => {
+
+    const Decrementar = () => {
+        let aux = diminuir
+        aux.pop()
+        setDiminuir([...aux])
+    }
+
+    const [diminuir, setDiminuir] = useState([1, 2, 3, 4, 5, 6, 7, 8, 9, 10])
+
     return (
         <div className="App">
             <div class= "menu">
@@ -27,7 +37,7 @@ const App = () => {
             <div className="Cartoes">
                 <Cartao titulo="Destino a São Paulo"
                     color = "#0C1F1D">
-                    <Componente1/>
+                    <Componente1 Decrementar={Decrementar} diminuir={diminuir} />
                 </Cartao>
 
                 <Cartao titulo="Destino ao Rio de Janeiro"
