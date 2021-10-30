@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react"
+import React, { useState, setState } from "react"
 import './App.css'
 import Cartao from "./layout/Cartao";
 import Componente1 from './componentes/saopaulo';
@@ -11,7 +11,6 @@ import Componente7 from './componentes/tokyo';
 import Componente8 from './componentes/cancun';
 import Componente9 from './componentes/restinga';
 import Componente10 from './componentes/alagoas';
-
 
 const App = () => {
 
@@ -42,47 +41,47 @@ const App = () => {
 
                 <Cartao titulo="Destino ao Rio de Janeiro"
                     color = "#0C1F1D">
-                    <Componente2/>
+                    <Componente2 Decrementar={Decrementar} diminuir={diminuir} />
                 </Cartao>
 
                 <Cartao titulo="Destino Ribeirão Preto"
                     color = "#0C1F1D">
-                    <Componente3/>
+                    <Componente3 Decrementar={Decrementar} diminuir={diminuir} />
                 </Cartao>
 
                 <Cartao titulo="Destino a Ibiraci"
                     color = "#0C1F1D">
-                    <Componente4/>
+                    <Componente4 Decrementar={Decrementar} diminuir={diminuir} />
                 </Cartao>
 
                 <Cartao titulo="Destino a Paris"
                     color = "#0C1F1D">
-                    <Componente5/>
+                    <Componente5 Decrementar={Decrementar} diminuir={diminuir} />
                 </Cartao>
 
                 <Cartao titulo="Destino a Manaus"
                     color = "#0C1F1D">
-                    <Componente6/>
+                    <Componente6 Decrementar={Decrementar} diminuir={diminuir} />
                 </Cartao>
 
                 <Cartao titulo="Destino a Tokyo"
                     color = "#0C1F1D">
-                    <Componente7/>
+                    <Componente7 Decrementar={Decrementar} diminuir={diminuir} />
                 </Cartao>
 
                 <Cartao titulo="Destino a Cancun"
                     color = "#0C1F1D">
-                    <Componente8/>
+                    <Componente8 Decrementar={Decrementar} diminuir={diminuir} />
                 </Cartao>
 
                 <Cartao titulo="Destino a Restinga"
                     color = "#0C1F1D">
-                    <Componente9/>
+                    <Componente9 Decrementar={Decrementar} diminuir={diminuir} />
                 </Cartao>
 
                 <Cartao titulo="Destino a Alagoas"
                      color = "#0C1F1D">
-                    <Componente10/>
+                    <Componente10 Decrementar={Decrementar} diminuir={diminuir} />
                 </Cartao>
             </div>
         </div>

@@ -5,7 +5,7 @@ html {
 }
 
 .menu ul {
-    padding: 10px 0 10px 0;
+    padding: 10px 0 8px 0;
     margin: 0 0 10px 0;
     list-style: none;
     text-align: center;
@@ -32,8 +32,8 @@ html {
     margin: 3px 3px 5px 30px;
     display: flex;
     flex-direction: column;
-    max-width: 330px;
-    min-width: 330px;
+    max-width: 250px;
+    min-width: 250px;
 }
 
 .Cartao .Titulo {
@@ -47,7 +47,12 @@ html {
     flex-grow: 1;
     background-color: rgb(255, 254, 253);
     color: black;
+    font-size: 12px;
+}
+
+.texto {
     text-align: center;
+    font-size: 12px;
 }
 
 .formulario > .off-1 {
@@ -76,15 +81,16 @@ button,
     letter-spacing: 0.25em;
     text-decoration: none;
     border-radius: 0.35em;
-    margin: 2px 2px 0 0em;
+    margin: 2px 2px 0 0;
     border: 0;
     outline: 0;
     cursor: pointer;
-    padding: 0 1em 1em 0;
-    min-width: 11em;
+    padding: 0 0 1em 0;
+    min-width: 10em;
     height: 3em;
     line-height: 3em;
     list-style: none;
+    font-size: 12px;
 }
 
 
@@ -101,8 +107,8 @@ input[type="submit"].large,
 input[type="reset"].large,
 button.large,
 .button.large {
-    font-size: 0.5em;
-    min-width: 10em;
+    font-size: 0.4em;
+    min-width: 9em;
 }
 
 input[type="button"].style1,
@@ -188,6 +194,6 @@ button.style2,
 
 .voo {
     background-color: #a0a1a7;
-    width: 340px;
+    width: 250px;
     padding: 4px;
 }
