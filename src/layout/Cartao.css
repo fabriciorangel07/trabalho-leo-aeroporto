@@ -1,3 +1,7 @@
+* {
+    padding: 0;
+    margin: 0;
+}
 
 html {
     align-items: center;
@@ -5,11 +9,12 @@ html {
 }
 
 .menu ul {
-    padding: 10px 0 8px 0;
+    padding: 10px 0 10px 0;
     margin: 0 0 10px 0;
     list-style: none;
     text-align: center;
     background-color: transparent;
+    background: #202127;
 }
 
 .menu ul li a {
@@ -53,6 +58,14 @@ html {
 .texto {
     text-align: center;
     font-size: 12px;
+    margin: 8px;
+}
+
+.formulario {
+    display: flex;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+    align-items: stretch;
 }
 
 .formulario > .off-1 {
@@ -62,6 +75,11 @@ html {
 
 .formulario > .col-2 {
     width: 100%;
+}
+
+
+.formulario > * {
+    box-sizing: border-box;
 }
 
 input[type="button"],
@@ -181,19 +199,66 @@ button.style2,
 			text-align: center;
 		}
 
-.assentos {
-    letter-spacing: 0.50em;
-    margin: 30px 0 0 0;
-}
-
-.ocupados {
-    letter-spacing: 0.50em;
-    margin: 30px 0 0 0;
-    text-decoration: line-through;
-}
-
 .voo {
     background-color: #a0a1a7;
-    width: 250px;
     padding: 4px;
+    margin-top: 4px;
 }
+
+.footer1 {
+	background: #202127;
+    width: 100%;
+    margin-top: 10px;
+	text-decoration: none;
+    vertical-align: baseline;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.footer {
+    padding: 1.5em 4em 0 4em;
+}
+
+	.footer h1, .footer h2, .footer h3, .footer strong, .footer b{
+		text-decoration: underline 2px;
+		transition: 0.2s;
+        font-size: 13px;
+        padding-bottom: 6px;
+        color: #6d6d6d
+	}
+
+    .footer p {
+        font-size: 12px;
+    }
+	
+	a:link, a:visited, a .social {
+        color: #fff;
+		text-decoration: none
+		}
+	a:hover {
+		color: rgb(95, 90, 90);
+		-moz-transition: all .25s ease-in-out;
+		-webkit-transition: all .25s ease-in-out;
+		-ms-transition: all .25s ease-in-out;
+		transition: all .25s ease-in-out;
+	}
+
+	.social:hover {
+		color: #6D6D6D;
+		-moz-transition: all .25s ease-in-out;
+		-webkit-transition: all .25s ease-in-out;
+		-ms-transition: all .25s ease-in-out;
+		transition: all .25s ease-in-out;
+	}
+
+	a:active {
+		text-decoration: none
+		}
+
+		.footer .feature-list section {
+			border-top-color: rgba(255, 255, 255, 0.05);
+		}
+
+		.footer .feature-list h3:before {
+			background: #3d4249;
+		}

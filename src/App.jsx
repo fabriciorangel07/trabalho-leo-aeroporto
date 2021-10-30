@@ -83,8 +83,51 @@ const App = () => {
                      color = "#0C1F1D">
                     <Componente10 Decrementar={Decrementar} diminuir={diminuir} />
                 </Cartao>
+                <section className="footer1">
+				<div class="formulario">
+					<div class="footer">
+						<section>
+							<h3>Endereço</h3>
+							<p>
+								Rua Dos Aeroportos, nº 0000<br />
+								Parque das Aeronovas<br />
+								Boeing - SP, CEP 14400-000
+							</p>
+						</section>
+					</div>
+					<div class="footer">
+						<section>
+							<h3>Midias Sociais</h3>
+							<p>
+								<a href="#" target="_blank"
+									rel="external" class="social">instagram.com/Aeroporto</a><br />
+								<a
+									href="#" target="_blank"
+									rel="external" class="social">facebook.com/Aeroporto</a>
+							</p>
+						</section>
+					</div>
+					<div class="footer">
+						<section>
+							<h3>Email</h3>
+							<p>
+								<a href="aeroporto@hotmail.com" target="_blank" rel="external" class="social">aeroporto@hotmail.com</a>
+							</p>
+						</section>
+					</div>
+					<div class="footer">
+						<section>
+							<h3>Telefone</h3>
+							<p>
+								(xx) 12345-6789
+							</p>
+						</section>
+					</div>
+				</div>
+			</section>  
             </div>
         </div>
+        
     )
 }
 
