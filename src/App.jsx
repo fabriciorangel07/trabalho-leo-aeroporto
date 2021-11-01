@@ -1,4 +1,4 @@
-import React, { useState, setState } from "react"
+import React, { useState } from "react"
 import './App.css'
 import Cartao from "./layout/Cartao";
 import Componente1 from './componentes/saopaulo';
@@ -12,26 +12,19 @@ import Componente8 from './componentes/cancun';
 import Componente9 from './componentes/restinga';
 import Componente10 from './componentes/alagoas';
 import image from './img/instagram.png';
+import image1 from './img/whatsapp.png';
+import image2 from './img/facebook.png';
 
-const App = () => {
 
-    const Decrementar = () => {
-        let aux = diminuir
-        aux.pop()
-        setDiminuir([...aux])
-    }
+function App() {
 
-    const [diminuir, setDiminuir] = useState([1, 2, 3, 4, 5, 6, 7, 8, 9, 10])
+    const [diminuir, setCount] = useState(30);
+ 
+    const add = () => {setCount(diminuir + 1)};
+    const sub = () => {setCount(diminuir - 1)};
 
     return (
         <div className="App">
-            <header>
-                <div class="instagram">
-                    <a href="#" >
-                        <img id="img" alt="Instagram" src={image} />
-                    </a>
-                </div>
-            </header>
             <div class="menu">
                 <ul>
                     <li><a href="index.html">Inicio</a></li>
@@ -44,52 +37,52 @@ const App = () => {
             <div className="Cartoes">
                 <Cartao titulo="Destino a São Paulo"
                     color="#0C1F1D">
-                    <Componente1 Decrementar={Decrementar} diminuir={diminuir} />
+                    <Componente1 diminuir={diminuir} sub={sub} add={add} />
                 </Cartao>
 
                 <Cartao titulo="Destino ao Rio de Janeiro"
                     color="#0C1F1D">
-                    <Componente2 Decrementar={Decrementar} diminuir={diminuir} />
+                    <Componente2 diminuir={diminuir} add={add} sub={sub} />
                 </Cartao>
 
                 <Cartao titulo="Destino Ribeirão Preto"
                     color="#0C1F1D">
-                    <Componente3 Decrementar={Decrementar} diminuir={diminuir} />
+                    <Componente3 diminuir={diminuir} add={add} sub={sub} />
                 </Cartao>
 
                 <Cartao titulo="Destino a Ibiraci"
                     color="#0C1F1D">
-                    <Componente4 Decrementar={Decrementar} diminuir={diminuir} />
+                    <Componente4 diminuir={diminuir} add={add} sub={sub} />
                 </Cartao>
 
                 <Cartao titulo="Destino a Paris"
                     color="#0C1F1D">
-                    <Componente5 Decrementar={Decrementar} diminuir={diminuir} />
+                    <Componente5 diminuir={diminuir} add={add} sub={sub} />
                 </Cartao>
 
                 <Cartao titulo="Destino a Manaus"
                     color="#0C1F1D">
-                    <Componente6 Decrementar={Decrementar} diminuir={diminuir} />
+                    <Componente6 diminuir={diminuir} add={add} sub={sub} />
                 </Cartao>
 
                 <Cartao titulo="Destino a Tokyo"
                     color="#0C1F1D">
-                    <Componente7 Decrementar={Decrementar} diminuir={diminuir} />
+                    <Componente7 diminuir={diminuir} add={add} sub={sub} />
                 </Cartao>
 
                 <Cartao titulo="Destino a Cancun"
                     color="#0C1F1D">
-                    <Componente8 Decrementar={Decrementar} diminuir={diminuir} />
+                    <Componente8 diminuir={diminuir} add={add} sub={sub} />
                 </Cartao>
 
                 <Cartao titulo="Destino a Restinga"
                     color="#0C1F1D">
-                    <Componente9 Decrementar={Decrementar} diminuir={diminuir} />
+                    <Componente9 diminuir={diminuir} add={add} sub={sub} />
                 </Cartao>
 
                 <Cartao titulo="Destino a Alagoas"
                     color="#0C1F1D">
-                    <Componente10 Decrementar={Decrementar} diminuir={diminuir} />
+                    <Componente10 diminuir={diminuir} add={add} sub={sub} />
                 </Cartao>
                 <section className="footer1">
                     <div class="formulario">
@@ -100,18 +93,6 @@ const App = () => {
                                     Rua Dos Aeroportos, nº 0000<br />
                                     Parque das Aeronovas<br />
                                     Boeing - SP, CEP 14400-000
-                                </p>
-                            </section>
-                        </div>
-                        <div class="footer">
-                            <section>
-                                <h3>Midias Sociais</h3>
-                                <p>
-                                    <a href="#" target="_blank"
-                                        rel="external" class="social">instagram.com/Aeroporto</a><br />
-                                    <a
-                                        href="#" target="_blank"
-                                        rel="external" class="social">facebook.com/Aeroporto</a>
                                 </p>
                             </section>
                         </div>
@@ -131,12 +112,25 @@ const App = () => {
                                 </p>
                             </section>
                         </div>
+                        <div class="footer">
+                            <section>
+                                <a href="#">
+                                    <img id="img" target="_blank" rel="external" alt="Instagram" src={image} />
+                                </a>
+                                <a href="#">
+                                    <img id="img" target="_blank" rel="external" alt="Facebook" src={image2} />
+                                </a>
+                                <a href="#">
+                                    <img id="img" target="_blank" rel="external" alt="Whastapp" src={image1} />
+                                </a>
+                            </section>
+                        </div>
                     </div>
                 </section>
             </div>
         </div>
 
-    )
+    );
 }
 
 export default App

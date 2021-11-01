@@ -11,17 +11,17 @@ const ibiraci = props => {
                 <strong>Saída</strong> as 07:15hr
                 <br />
                 <br />
-                {props.diminuir.length > 0 ?
+                {props.diminuir > 0 ?
                     (<div>
-                        Vagas disponiveis: {props.diminuir[props.diminuir.length -1]}
+                        Vagas disponiveis: {props.diminuir}
                     </div>):
-                    (<div>Não existem mais assentos disponiveis!</div>)
+                    (<div id="alerta"> Não existem mais assentos disponiveis! </div>)
                 }
                 <div class="formulario">
                     <div class="col-2 off-1">
                         <ul class="acoes">
-                            <li><button onClick={props.Decrementar} class="style1">Reservar</button></li>
-                            <li><button onClick={props.Decrementar} class="style2">Cancelar</button></li>
+                            <li><button onClick={props.sub} class="style1">Reservar</button></li>
+                            <li><button onClick={props.add} class="style2">Cancelar</button></li>
                         </ul>
                     </div>
                 </div>

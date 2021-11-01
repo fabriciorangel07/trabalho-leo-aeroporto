@@ -1,8 +1,13 @@
+function getRandom(max) {
+    return Math.floor(Math.random() * 10000)
+}
+
 export default function tokyo(props)
+
 {
     return (
         <div>
-            <h2 class="voo">Voo nº 341.066</h2>
+            <h2 class="voo">{<div>Voo nº {[getRandom ()]}</div>}</h2>
             <p class="texto">
                 <strong>Franca</strong> com destino a <strong>Tokyo</strong>
                 <br />
@@ -10,17 +15,17 @@ export default function tokyo(props)
                 <strong>Saída</strong> as 02:40hrs
                 <br />
                 <br />
-                {props.diminuir.length > 0 ?
+                {props.diminuir > 0 ?
                     (<div>
-                        Vagas disponiveis: {props.diminuir[props.diminuir.length -1]}
+                        Vagas disponiveis: {props.diminuir}
                     </div>):
-                    (<div>Não existem mais assentos disponiveis!</div>)
+                    (<div id="alerta"> Não existem mais assentos disponiveis! </div>)
                 }
                 <div class="formulario">
                     <div class="col-2 off-1">
                         <ul class="acoes">
-                            <li><button onClick={props.Decrementar} class="style1">Reservar</button></li>
-                            <li><button onClick={props.Decrementar} class="style2">Cancelar</button></li>
+                            <li><button onClick={props.sub} class="style1">Reservar</button></li>
+                            <li><button onClick={props.add} class="style2">Cancelar</button></li>
                         </ul>
                     </div>
                 </div>
