@@ -4,9 +4,13 @@ function getRandom(max) {
     return Math.floor(Math.random() * 10000)
 };
 
+function getRandom1(max) {
+    return Math.floor(Math.random() * 30)
+};
+
 function App() {
 
-    const [diminuir, setCount] = useState(30);
+    const [diminuir, setCount] = useState([getRandom1()]);
 
     const add = () => { setCount(diminuir + 1) };
     const sub = () => { setCount(diminuir - 1) };
@@ -14,7 +18,7 @@ function App() {
     {
         return (
             <div>
-                <h2 class="voo">{<div>Voo nº {[getRandom()]}</div>}</h2>
+                <h2 class="voo">{<div>Voo nº {useState[getRandom()]}</div>}</h2>
                 <p class="texto">
                     <strong>Franca</strong> com destino a <strong>Tokyo</strong>
                     <br />

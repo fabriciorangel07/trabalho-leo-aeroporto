@@ -1,8 +1,12 @@
 import React, { useState } from "react"
 
+function getRandom1(max) {
+    return Math.floor(Math.random() * 30)
+};
+
 function App() {
 
-    const [diminuir, setCount] = useState(30);
+    const [diminuir, setCount] = useState(getRandom1);
 
     const add = () => { setCount(diminuir + 1) };
     const sub = () => { setCount(diminuir - 1) };
@@ -17,7 +21,7 @@ function App() {
                 <strong>Saída</strong> as 19:00hrs
                 <br />
                 <br />
-                {diminuir > 0 ?
+                {diminuir > 0 ? 
                     (<div>
                         Vagas disponiveis: {diminuir}
                     </div>):
