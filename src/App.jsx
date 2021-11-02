@@ -1,4 +1,3 @@
-import React, { useState } from "react"
 import './App.css'
 import Cartao from "./layout/Cartao";
 import Componente1 from './componentes/saopaulo';
@@ -18,11 +17,6 @@ import image2 from './img/facebook.png';
 
 function App() {
 
-    const [diminuir, setCount] = useState(30);
- 
-    const add = () => {setCount(diminuir + 1)};
-    const sub = () => {setCount(diminuir - 1)};
-
     return (
         <div className="App">
             <div class="menu">
@@ -37,52 +31,52 @@ function App() {
             <div className="Cartoes">
                 <Cartao titulo="Destino a São Paulo"
                     color="#0C1F1D">
-                    <Componente1 diminuir={diminuir} sub={sub} add={add} />
+                    <Componente1/>
                 </Cartao>
 
                 <Cartao titulo="Destino ao Rio de Janeiro"
                     color="#0C1F1D">
-                    <Componente2 diminuir={diminuir} add={add} sub={sub} />
+                    <Componente2/>
                 </Cartao>
 
                 <Cartao titulo="Destino Ribeirão Preto"
                     color="#0C1F1D">
-                    <Componente3 diminuir={diminuir} add={add} sub={sub} />
+                    <Componente3/>
                 </Cartao>
 
                 <Cartao titulo="Destino a Ibiraci"
                     color="#0C1F1D">
-                    <Componente4 diminuir={diminuir} add={add} sub={sub} />
+                    <Componente4/>
                 </Cartao>
 
                 <Cartao titulo="Destino a Paris"
                     color="#0C1F1D">
-                    <Componente5 diminuir={diminuir} add={add} sub={sub} />
+                    <Componente5/>
                 </Cartao>
 
                 <Cartao titulo="Destino a Manaus"
                     color="#0C1F1D">
-                    <Componente6 diminuir={diminuir} add={add} sub={sub} />
+                    <Componente6/>
                 </Cartao>
 
                 <Cartao titulo="Destino a Tokyo"
                     color="#0C1F1D">
-                    <Componente7 diminuir={diminuir} add={add} sub={sub} />
+                    <Componente7/>
                 </Cartao>
 
                 <Cartao titulo="Destino a Cancun"
                     color="#0C1F1D">
-                    <Componente8 diminuir={diminuir} add={add} sub={sub} />
+                    <Componente8/>
                 </Cartao>
 
                 <Cartao titulo="Destino a Restinga"
                     color="#0C1F1D">
-                    <Componente9 diminuir={diminuir} add={add} sub={sub} />
+                    <Componente9/>
                 </Cartao>
 
                 <Cartao titulo="Destino a Alagoas"
                     color="#0C1F1D">
-                    <Componente10 diminuir={diminuir} add={add} sub={sub} />
+                    <Componente10/>
                 </Cartao>
                 <section className="footer1">
                     <div class="formulario">
