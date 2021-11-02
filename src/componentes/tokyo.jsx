@@ -1,8 +1,5 @@
 import React, { useState } from "react"
-
-function getRandom(max) {
-    return Math.floor(Math.random() * 10000)
-};
+import image3 from '../img/aviao.png';
 
 function getRandom1(max) {
     return Math.floor(Math.random() * 30)
@@ -10,7 +7,7 @@ function getRandom1(max) {
 
 function App() {
 
-    const [diminuir, setCount] = useState([getRandom1()]);
+    const [diminuir, setCount] = useState(getRandom1);
 
     const add = () => { setCount(diminuir + 1) };
     const sub = () => { setCount(diminuir - 1) };
@@ -18,7 +15,8 @@ function App() {
     {
         return (
             <div>
-                <h2 class="voo">{<div>Voo nº {useState[getRandom()]}</div>}</h2>
+                <h2 class="voo">{<div>Voo nº 100.250</div>}</h2>
+                <img class="transicao" target="_blank" rel="external" alt="aviao-transição" src={image3} />
                 <p class="texto">
                     <strong>Franca</strong> com destino a <strong>Tokyo</strong>
                     <br />

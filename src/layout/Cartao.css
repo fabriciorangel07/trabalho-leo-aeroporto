@@ -206,6 +206,8 @@ button.style2,
     background-color: #a0a1a7;
     padding: 4px;
     margin-top: 4px;
+    align-items: center;
+    text-align: center;
 }
 
 .footer1 {

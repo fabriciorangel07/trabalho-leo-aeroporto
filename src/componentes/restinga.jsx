@@ -1,4 +1,5 @@
 import React, { useState } from "react"
+import image3 from '../img/aviao.png';
 
 function getRandom1(max) {
     return Math.floor(Math.random() * 30)
@@ -14,6 +15,7 @@ function App() {
     return (
         <div>
             <h2 class="voo">Voo nº 000.005</h2>
+            <img class="transicao" target="_blank" rel="external" alt="aviao-transição" src={image3} />
             <p class="texto">
                 <strong>Franca</strong> com destino a <strong>Restinga</strong>
                 <br />
