@@ -213,8 +213,18 @@ button.style2,
 .footer1 {
 	background: #202127;
     width: 100%;
-    margin-top: 10px;
+    margin-top: 15px;
+    padding-top: 15px;
 	text-decoration: none;
+    text-align: center;
+    padding-bottom: 30px;
+}
+
+.footer2 {
+	background: #202127;
+    width: 100%;
+	text-decoration: none;
+    padding-bottom: 15px;
 }
 
 .footer {
@@ -263,9 +273,19 @@ button.style2,
 		}
 
         .footer img {
-            height: 20px;
-            width: 20px;
-            padding: 16px 10px 0 14px;
+            height: 30px;
+            width: 30px;
+            padding: 16px 16px 0 14px;
+            align-items: center;
+            text-align: center;
+        }
+
+        .footer image {
+            height: 40px;
+            width: 40px;
+            padding: 16px 16px 0 14px;
+            align-items: center;
+            text-align: center;
         }
         
         .footer a img {

@@ -13,6 +13,10 @@ import Componente10 from './componentes/alagoas';
 import image from './img/instagram.png';
 import image1 from './img/whatsapp.png';
 import image2 from './img/facebook.png';
+import image3 from './img/twitter.png';
+import image4 from './img/gmail.png';
+import image5 from './img/youtube.png';
+
 
 function App() {
 
@@ -30,54 +34,78 @@ function App() {
             <div className="Cartoes">
                 <Cartao titulo="Destino a São Paulo"
                     color="#0C1F1D">
-                    <Componente1/>
+                    <Componente1 />
                 </Cartao>
 
                 <Cartao titulo="Destino ao Rio de Janeiro"
                     color="#0C1F1D">
-                    <Componente2/>
+                    <Componente2 />
                 </Cartao>
 
                 <Cartao titulo="Destino Ribeirão Preto"
                     color="#0C1F1D">
-                    <Componente3/>
+                    <Componente3 />
                 </Cartao>
 
                 <Cartao titulo="Destino a Ibiraci"
                     color="#0C1F1D">
-                    <Componente4/>
+                    <Componente4 />
                 </Cartao>
 
                 <Cartao titulo="Destino a Paris"
                     color="#0C1F1D">
-                    <Componente5/>
+                    <Componente5 />
                 </Cartao>
 
                 <Cartao titulo="Destino a Manaus"
                     color="#0C1F1D">
-                    <Componente6/>
+                    <Componente6 />
                 </Cartao>
 
                 <Cartao titulo="Destino a Tokyo"
                     color="#0C1F1D">
-                    <Componente7/>
+                    <Componente7 />
                 </Cartao>
 
                 <Cartao titulo="Destino a Cancun"
                     color="#0C1F1D">
-                    <Componente8/>
+                    <Componente8 />
                 </Cartao>
 
                 <Cartao titulo="Destino a Restinga"
                     color="#0C1F1D">
-                    <Componente9/>
+                    <Componente9 />
                 </Cartao>
 
                 <Cartao titulo="Destino a Alagoas"
                     color="#0C1F1D">
-                    <Componente10/>
+                    <Componente10 />
                 </Cartao>
                 <section className="footer1">
+                    <div class="footer">
+                        <section>
+                            <a href="#">
+                                <img id="img" target="_blank" rel="external" title="Instagram" src={image} />
+                            </a>
+                            <a href="#">
+                                <img id="img" target="_blank" rel="external" title="Whastapp" src={image1} />
+                            </a>
+                            <a href="#">
+                                <img id="img" target="_blank" rel="external" title="Facebook" src={image2} />
+                            </a>
+                            <a href="#">
+                                <img id="image" target="_blank" rel="external" title="Twitter" src={image3} />
+                            </a>
+                            <a href="#">
+                                <img id="image" target="_blank" rel="external" title="gmail" src={image4} />
+                            </a>
+                            <a href="#">
+                                <img id="image" target="_blank" rel="external" title="youtube" src={image5} />
+                            </a>
+                        </section>
+                    </div>
+                </section>
+                <section className="footer2">
                     <div class="formulario">
                         <div class="footer">
                             <section>
@@ -105,24 +133,10 @@ function App() {
                                 </p>
                             </section>
                         </div>
-                        <div class="footer">
-                            <section>
-                                <a href="#">
-                                    <img id="img" target="_blank" rel="external" alt="Instagram" src={image} />
-                                </a>
-                                <a href="#">
-                                    <img id="img" target="_blank" rel="external" alt="Facebook" src={image2} />
-                                </a>
-                                <a href="#">
-                                    <img id="img" target="_blank" rel="external" alt="Whastapp" src={image1} />
-                                </a>
-                            </section>
-                        </div>
                     </div>
                 </section>
             </div>
         </div>
-
     );
 }
 
