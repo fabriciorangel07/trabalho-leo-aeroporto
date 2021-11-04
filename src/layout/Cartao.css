@@ -18,7 +18,7 @@ html {
 
 .menu ul li a {
     padding: 10px 20px 10px 20px;
-    color:  #EDEDED;
+    color:  #fff;
     text-decoration: none;
     background-color: #202127;  
 }
@@ -152,7 +152,7 @@ button.style1,
     input[type="reset"].style1:active,
     button.style1:active,
     .button.style1:active {
-        background-color: #e43131;
+        background-color: #df3030;
     }
 
 input[type="button"].style2,
@@ -162,7 +162,7 @@ button.style2,
 .button.style2 {
     background: #606167;
     color: #fff;
-    box-shadow: inset 0px 0px 0px 0px #a0a1a7;
+    box-shadow: inset 0px 0px 0px 0px #606167;
 }
 
     input[type="button"].style2:hover,
@@ -201,7 +201,7 @@ button.style2,
 		}
 
 .voo {
-    background-color: #a0a1a7;
+    background-color: #606167;
     padding: 4px;
     margin-top: 4px;
     align-items: center;
@@ -234,9 +234,9 @@ button.style2,
 	.footer h1, .footer h2, .footer h3, .footer strong, .footer b{
 		transition: 0.2s;
         font-size: 13px;
-        color: #6d6d6d;
+        color: #606167;
         line-height: 20px;
-        border-left: 2px solid white;
+        border-left: 2px solid #fff;
         padding-left: 12px;
         text-transform: uppercase;
 
@@ -246,7 +246,7 @@ button.style2,
         font-family: monospace;
         font-size: 12px;
         line-height: 18px;
-        border-left: 2px solid white;
+        border-left: 2px solid #fff;
         padding-left: 12px;
         padding-top: 2px;
     }
@@ -257,7 +257,7 @@ button.style2,
 		}
 
 	a:hover {
-		color: rgb(95, 90, 90);
+		color: #606167;
 		-moz-transition: all .25s ease-in-out;
 		-webkit-transition: all .25s ease-in-out;
 		-ms-transition: all .25s ease-in-out;
@@ -271,7 +271,7 @@ button.style2,
 		-ms-transition: all .25s ease-in-out;
         opacity: 10%;
 		transition: all .25s ease-in-out;
-        fill: #6D6D6D;
+        fill: #606167;
 	}
 
     .menu #img_insta:hover {
@@ -280,7 +280,7 @@ button.style2,
 		-ms-transition: all .25s ease-in-out;
         opacity: 10%;
 		transition: all .25s ease-in-out;
-        fill: #6D6D6D;
+        fill: #606167;
 	}
 
 	a:active {
@@ -292,7 +292,7 @@ button.style2,
 		}
 
 		.footer .feature-list h3:before {
-			background: #3d4249;
+			background: #606167;
 		}
 
         .footer img {
@@ -304,7 +304,7 @@ button.style2,
         }
 
 #alerta {
-    color: #df4444;
+    color: #df3030;
     font-weight: 600;
 }
 
