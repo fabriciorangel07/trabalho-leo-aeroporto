@@ -28,7 +28,6 @@ html {
 
 .menu ul li a:hover {
     color: #6D6D6D; 
-    border-bottom: 1px solid #d96760;
 }
 
 .Cartao {
@@ -121,7 +120,7 @@ input[type="submit"]:hover,
 input[type="reset"]:hover,
 button:hover,
 .button:hover {
-    background-color: #df4444;
+    background-color: #df3030;
 }
 
 input[type="button"].large,
@@ -147,7 +146,7 @@ button.style1,
     input[type="reset"].style1:hover,
     button.style1:hover,
     .button.style1:hover {
-        background-color: #df4444;
+        background-color: #df3030;
     }
 
     input[type="button"].style1:active,
@@ -155,7 +154,7 @@ button.style1,
     input[type="reset"].style1:active,
     button.style1:active,
     .button.style1:active {
-        background-color: #df4444;
+        background-color: #e43131;
     }
 
 input[type="button"].style2,
@@ -174,7 +173,7 @@ button.style2,
     button.style2:hover,
     .button.style2:hover {
         box-shadow: inset 0px 0px 2px 0px #606167;
-        background-color: #a0a1a7;
+        background-color: #1d1d1f;
     }
 
     input[type="button"].style2:active,
@@ -265,8 +264,27 @@ button.style2,
 		-webkit-transition: all .25s ease-in-out;
 		-ms-transition: all .25s ease-in-out;
 		transition: all .25s ease-in-out;
-        border-bottom: 1px solid #d96760;
         padding-bottom: 3px;
+	}
+
+    img:hover {
+		-moz-transition: all .25s ease-in-out;
+		-webkit-transition: all .25s ease-in-out;
+		-ms-transition: all .25s ease-in-out;
+        -webkit-filter: grayscale(0%);
+        opacity: 10%;
+		transition: all .25s ease-in-out;
+        fill: #6D6D6D;
+	}
+
+    .menu #img_insta:hover {
+		-moz-transition: all .25s ease-in-out;
+		-webkit-transition: all .25s ease-in-out;
+		-ms-transition: all .25s ease-in-out;
+        -webkit-filter: grayscale(0%);
+        opacity: 10%;
+		transition: all .25s ease-in-out;
+        fill: #6D6D6D;
 	}
 
 	a:active {
@@ -299,6 +317,7 @@ button.style2,
     width: 20px;
     align-items: center;
     text-align: center;
+    -webkit-filter: grayscale(100%);
 }
 
 .menu #img_insta {
