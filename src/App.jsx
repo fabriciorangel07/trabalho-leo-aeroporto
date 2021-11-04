@@ -24,11 +24,14 @@ function App() {
         <div className="App">
             <div class="menu">
                 <ul>
-                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="index.html" id="inicio">Inicio</a></li>
                     <li><a href="#">Companhias</a></li>
                     <li><a href="#">Informações</a></li>
                     <li><a href="#">Sobre</a></li>
                     <li><a href="#">Contato</a></li>
+                    <li><a href="#"><img id="img_insta" target="_blank" rel="external" title="Instagram" src={image} /></a></li>
+                    <li><a href="#"><img id="img" target="_blank" rel="external" title="Whastapp" src={image1} /></a></li>
+                    <li><a href="#"><img id="img" target="_blank" rel="external" title="Facebook" src={image2} /></a></li>
                 </ul>
             </div>
             <div className="Cartoes">
@@ -94,13 +97,13 @@ function App() {
                                 <img id="img" target="_blank" rel="external" title="Facebook" src={image2} />
                             </a>
                             <a href="#">
-                                <img id="image" target="_blank" rel="external" title="Twitter" src={image3} />
+                                <img id="img" target="_blank" rel="external" title="Twitter" src={image3} />
                             </a>
                             <a href="#">
-                                <img id="image" target="_blank" rel="external" title="gmail" src={image4} />
+                                <img id="img" target="_blank" rel="external" title="gmail" src={image4} />
                             </a>
                             <a href="#">
-                                <img id="image" target="_blank" rel="external" title="youtube" src={image5} />
+                                <img id="img" target="_blank" rel="external" title="youtube" src={image5} />
                             </a>
                         </section>
                     </div>
@@ -119,7 +122,7 @@ function App() {
                         </div>
                         <div class="footer">
                             <section>
-                                <h3>Email</h3>
+                                <h3>E-mail</h3>
                                 <p>
                                     <a href="#" target="_blank" rel="external" class="social">aeroporto@hotmail.com</a>
                                 </p>

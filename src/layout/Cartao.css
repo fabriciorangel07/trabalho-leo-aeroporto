@@ -1,6 +1,7 @@
 * {
     padding: 0;
     margin: 0;
+    font-family: monospace;
 }
 
 html {
@@ -36,8 +37,8 @@ html {
     margin: 3px 3px 5px 30px;
     display: flex;
     flex-direction: column;
-    max-width: 250px;
-    min-width: 250px;
+    max-width: 260px;
+    min-width: 260px;
     text-align: center;
 }
 
@@ -224,7 +225,8 @@ button.style2,
 	background: #202127;
     width: 100%;
 	text-decoration: none;
-    padding-bottom: 15px;
+    padding-bottom: 30px;
+    float: left;
 }
 
 .footer {
@@ -232,17 +234,24 @@ button.style2,
 }
 
 	.footer h1, .footer h2, .footer h3, .footer strong, .footer b{
-		text-decoration: underline 2px;
 		transition: 0.2s;
         font-size: 13px;
         padding-bottom: px;
         color: #6d6d6d;
         line-height: 20px;
+        border-left: 2px solid white;
+        padding-left: 12px;
+        text-transform: uppercase;
+
 	}
 
     .footer p {
+        font-family: monospace;
         font-size: 12px;
         line-height: 18px;
+        border-left: 2px solid white;
+        padding-left: 12px;
+        padding-top: 2px;
     }
 	
 	a:link, a:visited, a .social {
@@ -275,25 +284,31 @@ button.style2,
         .footer img {
             height: 30px;
             width: 30px;
-            padding: 16px 16px 0 14px;
+            padding: 16px 16px 0 16px;
             align-items: center;
             text-align: center;
-        }
-
-        .footer image {
-            height: 40px;
-            width: 40px;
-            padding: 16px 16px 0 14px;
-            align-items: center;
-            text-align: center;
-        }
-        
-        .footer a img {
-            color:  #EDEDED;
-            text-decoration: none;
         }
 
 #alerta {
     color: #df4444;
     font-weight: 600;
+}
+
+.menu img {
+    height: 20px;
+    width: 20px;
+    align-items: center;
+    text-align: center;
+}
+
+.menu #img_insta {
+    height: 20px;
+    width: 20px;
+    padding: 0 0 0 370px;
+    align-items: center;
+    text-align: center;
+}
+
+.menu #inicio {
+    padding-left: 450px;
 }
